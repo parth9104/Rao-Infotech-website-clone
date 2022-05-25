@@ -1,24 +1,87 @@
 *{
     box-sizing:border-box;
 }
-#header #navbar{
-        width:100%;
-    background-color:#ffc107;
-    height:100px;    
-    
+body{
+    margin:0 0 0 0;
+    font-family: sans-serif;
 
 }
+#header #navbar{
+     width:100%;
+    background-color:#ffaa17;
+    height:100px;  
+    display: flex;  
+    justify-content:center;
+    font-size:larger;
+    color:white;
+    margin:0;
+    border-style:solid;
+    border-width:1px 1px 1px 1px;
+    border-color:rgb(220, 228, 234);
+}
 #header #image{
-    margin:10px 0 10px 20px;
-    height:40px;
-    width:60px;
-    
+    padding: 15px;
+    height:80px;
+    width:140px;
+    float:left;
+    margin:0 0 35px 0; 
 
 }
 #header #unlist .limenu{
     display:inline;
-    margin:10px 10px 10px 10px;
-    padding-bottom:100px;
+    margin:10px 10px 10px 5px;
 
+}
+#header #unlist{
+    margin:40px 130px 0px 200px;
+}
+#header #navbar #call{
+line-height: 7px;
+margin-right:20px;
+}
+#header #img2{
+    padding:20px;
+    height:70px;
+    width:80px;
 
+    margin:0 0 35px 0; 
+
+}
+
+/*SECTION 01*/
+#sec1{
+    background-color:#ffaa17;
+    width:100%;
+    height:800px;
+    margin-top:0;
+}
+#sec1 #sec1div1{
+    width:40%;
+}
+#sec1 #sec1div1 #ptext1{
+    font-size:12vh;
+    margin:0 0 0 0;
+    color:white;
+    text-align:left;
+    padding:200px 0 0 200px;
+}
+#sec1 #sec1div1 #ptext2{
+    font-size:25px;
+    color:black;
+    margin:0 0 0 0;
+    text-align:left;
+    padding:20px 0 0 200px;
+    font-weight:450;
+}
+#sec1 #sec1div2{
+    width:40%;
+    margin-top:50px;
+}
+#sec1 #sec1div2 #atext1{
+    display: inline;
+    margin-left: 200px;
+    padding: 26px 35px 26px 35px;
+    color: white;
+    background-color: black;
+    border-radius: 13px;
 }
