@@ -1,0 +1,121 @@
+
+HP@Parth MINGW64 /d/DEPSTAR/SEM 5/SUMMER INTERNSHIP 01/Week 02
+$ git init
+Initialized empty Git repository in D:/DEPSTAR/SEM 5/SUMMER INTERNSHIP 01/Week 02/.git/
+
+HP@Parth MINGW64 /d/DEPSTAR/SEM 5/SUMMER INTERNSHIP 01/Week 02 (master)
+$ git remote add origin https://github.com/parth9104/learningithub.git
+
+HP@Parth MINGW64 /d/DEPSTAR/SEM 5/SUMMER INTERNSHIP 01/Week 02 (master)
+$ git add index.html
+
+HP@Parth MINGW64 /d/DEPSTAR/SEM 5/SUMMER INTERNSHIP 01/Week 02 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+
+HP@Parth MINGW64 /d/DEPSTAR/SEM 5/SUMMER INTERNSHIP 01/Week 02 (master)
+$ git branch
+
+HP@Parth MINGW64 /d/DEPSTAR/SEM 5/SUMMER INTERNSHIP 01/Week 02 (master)
+$ git checkout
+fatal: You are on a branch yet to be born
+
+HP@Parth MINGW64 /d/DEPSTAR/SEM 5/SUMMER INTERNSHIP 01/Week 02 (master)
+$ git checkout -b development
+Switched to a new branch 'development'
+
+HP@Parth MINGW64 /d/DEPSTAR/SEM 5/SUMMER INTERNSHIP 01/Week 02 (development)
+$ git status
+On branch development
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+
+HP@Parth MINGW64 /d/DEPSTAR/SEM 5/SUMMER INTERNSHIP 01/Week 02 (development)
+$ git add index.html
+
+HP@Parth MINGW64 /d/DEPSTAR/SEM 5/SUMMER INTERNSHIP 01/Week 02 (development)
+$ git add *
+
+HP@Parth MINGW64 /d/DEPSTAR/SEM 5/SUMMER INTERNSHIP 01/Week 02 (development)
+$ git commit -m "first commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'HP@Parth.(none)')
+
+HP@Parth MINGW64 /d/DEPSTAR/SEM 5/SUMMER INTERNSHIP 01/Week 02 (development)
+$ ^C
+
+HP@Parth MINGW64 /d/DEPSTAR/SEM 5/SUMMER INTERNSHIP 01/Week 02 (development)
+$ git config --global user.email "parthvaghela791@gmail.com"
+
+HP@Parth MINGW64 /d/DEPSTAR/SEM 5/SUMMER INTERNSHIP 01/Week 02 (development)
+$ ^C
+
+HP@Parth MINGW64 /d/DEPSTAR/SEM 5/SUMMER INTERNSHIP 01/Week 02 (development)
+$   git config --global user.name "Parth"
+
+HP@Parth MINGW64 /d/DEPSTAR/SEM 5/SUMMER INTERNSHIP 01/Week 02 (development)
+$ git commit -m "first commit"
+[development (root-commit) cde2990] first commit
+ 1 file changed, 12 insertions(+)
+ create mode 100644 index.html
+
+HP@Parth MINGW64 /d/DEPSTAR/SEM 5/SUMMER INTERNSHIP 01/Week 02 (development)
+$ git push origin development
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 389 bytes | 389.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/parth9104/learningithub.git
+ * [new branch]      development -> development
+
+HP@Parth MINGW64 /d/DEPSTAR/SEM 5/SUMMER INTERNSHIP 01/Week 02 (development)
+$ git pull origin development
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0
+Unpacking objects: 100% (3/3), 294 bytes | 26.00 KiB/s, done.
+From https://github.com/parth9104/learningithub
+ * branch            development -> FETCH_HEAD
+   cde2990..0d317d6  development -> origin/development
+Updating cde2990..0d317d6
+Fast-forward
+ index.html | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+HP@Parth MINGW64 /d/DEPSTAR/SEM 5/SUMMER INTERNSHIP 01/Week 02 (development)
+$ git push origin development
+Everything up-to-date
+
+HP@Parth MINGW64 /d/DEPSTAR/SEM 5/SUMMER INTERNSHIP 01/Week 02 (development)
+$
